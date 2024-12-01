@@ -48,7 +48,7 @@ The application will be developed using Spring Security for the backend, Restful
 mysql> create database mom
 ```
 
-3. **Setup application.yml**
+3. **Setup application.properties**
 
 ```yml
 spring.datasource.url= jdbc:mysql://localhost:3306/mom?useSSL=false
@@ -101,22 +101,6 @@ npm start
 
 3. **Open [http://localhost:3000](http://localhost:3000) to view it in the browser.**
 
-## Screenshot
-
-<p>Home Page</p>
-<img src="./Images/Home.png" alt="home_page" width="50%"/>
-<p>Register</p>
-<img src="./Images/Register.png" alt="register" width="50%"/>
-<p>Login</p>
-<img src="./Images/Login.png" alt="login" width="50%"/>
-<p>Profile page</p>
-<img src="./Images/Profile.png" alt="profile" width="50%"/>
-<p>Stores</p>
-<img src="./Images/SearchStore.png" alt="profile" width="50%"/>
-<p>Store Detail</p>
-<img src="./Images/ViewStore.png" alt="profile" width="50%"/>
-<p>Add Store</p>
-<img src="./Images/AddStore.png" alt="profile" width="50%"/>
 <p>About Page</p>
 <img src="./Images/AboutUs.png" alt="profile" width="50%"/>
 <p>Contact Page</p>
