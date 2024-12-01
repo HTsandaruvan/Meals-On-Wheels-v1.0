@@ -14,15 +14,23 @@ The Meals On Wheels website consists of the following Key pages
 1. Landing Page /Home Page 
 2. Registration 
 3. Login 
-4. Donation Page 
+4. Donation Page
+5. Contact Us Page 
+6. About Us Page 
+7. Admin Dashboard 
+8. Caregiver Page 
+9. Partner Page 
+10. Member Page
+11. Member Feedback Page 
+
 Roles are,
 
-Member
-Caregiver
-Rider
-Partner
-Admin
-Volunteer
+1. Member
+2. Caregiver
+3. Rider
+4. Partner
+5. Admin
+6. Volunteer
 
 ## Technologies Used & System Requirements
 
