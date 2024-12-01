@@ -9,7 +9,7 @@
 
 ## Project Overview
 
-The Know-Your-Neighborhood website consists of the following Key pages
+The Meals On Wheels website consists of the following Key pages
 
 Landing Page /Home Page 
 Registration 
@@ -22,16 +22,20 @@ Caregiver Page
 Partner Page 
 Member Page
 Member Feedback Page 
-![image](https://github.com/user-attachments/assets/38ae26f9-e225-4642-9462-7c643bee5afa)
 
+Roles are,
 
-Customers can login using the existing API and fetch basic information such as name, email from API.
+Member
+Caregiver
+Rider
+Partner
+Admin
+Volunteer
 
 ## Technologies Used & System Requirements
 
-Backend : Java SE 11, MySQL 8, Spring Boot, Spring Security, OAuth2 (Facebook API), Restful API <br/>
-Frontend : React, Tailwindcss, Axios, React-hook-form, React-router-dom <br/>
-Tools : Node Js (LTS Ver)
+We will develop the project containing all the points in our notes. Our main focus will be making the ordering and delivery procedure simple for the aged, diseased, or disabled customer as well as for the business. Besides the system should be user-friendly with a dynamic menu, so that all the options can be easily visible. 
+The application will be developed using Spring Security for the backend, Restful Web Services for API, and React JS for the front end. Throughout the project development period, the adaptive software development method will be followed
 
 ## HOW TO RUN
 
@@ -41,49 +45,38 @@ Tools : Node Js (LTS Ver)
 2. **Create MySQL database**
 
 ```bash
-mysql> create database kyn
+mysql> create database mom
 ```
 
 3. **Setup application.yml**
 
 ```yml
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/kyn
-    username: <YOUR_DB_USERNAME>
-    password: <YOUR_DB_PASSWORD>
+spring.datasource.url= jdbc:mysql://localhost:3306/mom?useSSL=false
+spring.datasource.username= <username>
+spring.datasource.password= <password>
 
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
-  security:
-    oauth2:
-      client:
-        registration:
-          facebook:
-            clientId: <YOUR_FACEBOOK_CLIENTID>
-            clientSecret: <YOUR_FACEBOOK_CLIENTSECRET>
-            redirectUri: http://localhost:8080/oauth2/callback/facebook
-            scope:
-              - email
-              - public_profile
-        provider:
-          facebook:
-            authorizationUri: https://www.facebook.com/v3.0/dialog/oauth
-            tokenUri: https://graph.facebook.com/v3.0/oauth/access_token
-            userInfoUri: https://graph.facebook.com/v3.0/me?fields=id,name,email,picture.width(250).height(250)
+spring.jpa.properties.hibernate.dialect= org.hibernate.dialect.MySQL5InnoDBDialect
+spring.jpa.hibernate.ddl-auto= update
 
-app:
-  auth:
-    tokenSecret: <YOUR_TOKEN_SECRET> (you can go to generator online for token secret)
-    tokenExpirationMsec: 86400000
-  oauth2:
-    authorizedRedirectUris:
-      - http://localhost:3000/oauth2/redirect
+# App Properties
+mow.app.jwtSecret= group2SecretKey
+mow.app.jwtExpirationMs= 86400000
+
+## MULTIPART (MultipartProperties)
+# Enable multipart uploads
+spring.servlet.multipart.enabled=true
+# Threshold after which files are written to disk.
+spring.servlet.multipart.file-size-threshold=2KB
+# Max file size.
+spring.servlet.multipart.max-file-size=200MB
+# Max Request Size
+spring.servlet.multipart.max-request-size=215MB
+
+## File Storage Properties
+# Please change this to the path where you want the uploaded files to be stored.
+file.upload-dir=./src/main/resources/images
+
+    
 ```
 
 4. **Get Client ID & Client Secret Facebook API**
