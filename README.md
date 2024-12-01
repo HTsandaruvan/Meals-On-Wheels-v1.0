@@ -11,7 +11,9 @@
 
 The Meals On Wheels website consists of the following Key pages
 
-Landing Page /Home Page 
+<li>
+    <ol>
+     Landing Page /Home Page 
 Registration 
 Login 
 Donation Page 
@@ -22,6 +24,9 @@ Caregiver Page
 Partner Page 
 Member Page
 Member Feedback Page 
+   
+    </ol>
+</li>
 
 Roles are,
 
