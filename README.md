@@ -11,15 +11,19 @@
 
 The Know-Your-Neighborhood website consists of the following Key pages
 
-1. Home Page
-2. Registration Page
-3. Login Page with social login (Facebook)
-4. Contact us Page
-5. About us Page
-6. Stores Page
-7. Store Detail Page
-8. Post Store
-9. View Profile page
+Landing Page /Home Page 
+Registration 
+Login 
+Donation Page 
+Contact Us Page 
+About Us Page 
+Admin Dashboard 
+Caregiver Page 
+Partner Page 
+Member Page
+Member Feedback Page 
+![image](https://github.com/user-attachments/assets/38ae26f9-e225-4642-9462-7c643bee5afa)
+
 
 Customers can login using the existing API and fetch basic information such as name, email from API.
 
