@@ -101,9 +101,3 @@ npm start
 
 3. **Open [http://localhost:3000](http://localhost:3000) to view it in the browser.**
 
-<p>About Page</p>
-<img src="./Images/AboutUs.png" alt="profile" width="50%"/>
-<p>Contact Page</p>
-<img src="./Images/ContactUs.png" alt="profile" width="50%"/>
-<p>Terms and Condition Page</p>
-<img src="./Images/Terms.png" alt="profile" width="50%"/>
